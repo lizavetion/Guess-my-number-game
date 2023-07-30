@@ -56,7 +56,7 @@ document.querySelector('.check').addEventListener('click', function (){
         } else {
             displayMessage('❌ You lost the game!')
             // document.querySelector('.message').textContent = '❌ You lost the game!';
-            displayScore('0')
+            displayScore(0)
             // document.querySelector('.score').textContent = '0';
         }
 
@@ -88,8 +88,9 @@ document.querySelector('.check').addEventListener('click', function (){
  document.querySelector('.again').addEventListener('click', function(){
      // location.reload()
      secretNumber = Math.trunc(Math.random() * 20) + 1;
+     score = 20;
      displayScore('20')
-     // document.querySelector('.score').textContent = '20';
+     // document.querySelector('.score').textContent = 20;
 
      displayMessage('Start guessing...')
      // document.querySelector('.message').textContent = 'Start guessing...';
